@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:simple_to_do_app/locator.dart';
 import 'package:simple_to_do_app/to_do_list.dart/presentation/to_do_list_screen.dart';
 
 void main() {
+  setupLocator();
   runApp(const MyApp());
 }
 
