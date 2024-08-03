@@ -1,7 +1,8 @@
+import 'package:equatable/equatable.dart';
 import 'package:simple_to_do_app/to_do_list.dart/domain/entity/to_do.dart';
 
-final class ToDoModel {
-  ToDoModel({
+final class ToDoModel extends Equatable {
+  const ToDoModel({
     required this.id,
     required this.title,
     required this.description,
@@ -33,4 +34,11 @@ final class ToDoModel {
   String toString() {
     return 'ToDoModel{id: $id, title: $title, description: $description}';
   }
+
+  @override
+  List<Object> get props => [
+        id,
+        title,
+        description,
+      ];
 }
