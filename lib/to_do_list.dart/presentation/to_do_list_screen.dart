@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_to_do_app/to_do_list.dart/presentation/widgets/to_di_list_card.dart';
+import 'package:simple_to_do_app/to_do_list.dart/presentation/widgets/to_do_list_card.dart';
 
 class ToDoListScreen extends StatefulWidget {
   const ToDoListScreen({super.key});
