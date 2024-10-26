@@ -10,8 +10,11 @@ final locator = GetIt.instance;
 
 void setupLocator() {
   locator.registerLazySingleton<SharedPreferencesAdapter>(
-      () => SharedPreferencesAdapterImpl());
-  locator.registerLazySingleton<Repository>(() => RepositoryImpl());
+    () => SharedPreferencesAdapterImpl(),
+  );
+  locator.registerLazySingleton<Repository>(
+    () => RepositoryImpl(),
+  );
   locator.registerLazySingleton<CreateToDoUsecase>(
     () => CreateToDoUsecaseImpl(
       locator<Repository>(),
