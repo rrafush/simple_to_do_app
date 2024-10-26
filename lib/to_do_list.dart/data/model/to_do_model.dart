@@ -18,6 +18,12 @@ final class ToDoModel extends Equatable {
         description: json["description"],
       );
 
+  factory ToDoModel.fromEntity(ToDo toDo) => ToDoModel(
+        id: toDo.id,
+        title: toDo.title,
+        description: toDo.description,
+      );
+
   Map<String, dynamic> toJson() => {
         "id": id,
         "title": title,
