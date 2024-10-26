@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:simple_to_do_app/locator.dart';
 import 'package:simple_to_do_app/to_do_list.dart/data/model/to_do_model.dart';
 import 'package:simple_to_do_app/to_do_list.dart/domain/entity/to_do.dart';
