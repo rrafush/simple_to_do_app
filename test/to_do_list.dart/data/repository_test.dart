@@ -1,4 +1,3 @@
-import 'package:fake_async/fake_async.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:simple_to_do_app/to_do_list.dart/data/model/to_do_model.dart';
